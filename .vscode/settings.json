@@ -1,68 +1,71 @@
 {
-  "files.watcherExclude": {
-    "**/routeTree.gen.ts": true
-  },
-  "search.exclude": {
-    "**/routeTree.gen.ts": true
-  },
-  "files.readonlyInclude": {
-    "**/routeTree.gen.ts": true
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "files.associations": {
-    ".env": "dotenv",
-    ".env.local": "dotenv",
-    ".env.*": "dotenv"
-  },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "comment.line.number-sign.env",
-        "settings": {
-          "foreground": "#6A737D"
-        }
-      },
-      {
-        "scope": "variable.other.env",
-        "settings": {
-          "foreground": "#005CC5"
-        }
-      },
-      {
-        "scope": [
-          "string.quoted.double.env",
-          "string.quoted.single.env",
-          "constant.language.env",
-          "constant.numeric.env",
-          "keyword.operator.assignment.env"
-        ],
-        "settings": {
-          "foreground": "#22863A"
-        }
-      }
-    ]
-  },
-  "editor.codeActionsOnSave": {
-    "source.organizeImports.biome": "explicit"
-  }
+	"files.watcherExclude": {
+		"**/routeTree.gen.ts": true
+	},
+	"search.exclude": {
+		"**/routeTree.gen.ts": true
+	},
+	"files.readonlyInclude": {
+		"**/routeTree.gen.ts": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"files.associations": {
+		"*.env": "dotenv",
+		"*.env.*": "dotenv",
+		"**/.env": "dotenv",
+		"**/.env.*": "dotenv"
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "comment.line.number-sign.env",
+				"settings": {
+					"foreground": "#6A737D"
+				}
+			},
+			{
+				"scope": "variable.other.env",
+				"settings": {
+					"foreground": "#005CC5"
+				}
+			},
+			{
+				"scope": [
+					"string.quoted.double.env",
+					"string.quoted.single.env",
+					"constant.language.env",
+					"constant.numeric.env",
+					"keyword.operator.assignment.env"
+				],
+				"settings": {
+					"foreground": "#22863A"
+				}
+			}
+		]
+	},
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "always",
+		"source.organizeImports.biome": "always"
+	}
 }
